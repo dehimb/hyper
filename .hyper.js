@@ -7,9 +7,6 @@ module.exports = {
             debug: false,
             default: false
         },
-        monokaiDeluxe: {
-            borderWidth: '1px'
-        },
         defaultSSHApp: true,
         shell: '/usr/local/bin/zsh',
         // default font size in pixels for all tabs
@@ -18,15 +15,15 @@ module.exports = {
         // font family with optional fallbacks
         fontFamily: 'Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
 
-         // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-         cursorColor: 'rgba(255,0,0,0.8)',
-         // terminal text color under BLOCK cursor
-         cursorAccentColor: '#000',
-         // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
-         cursorShape: 'BLOCK',
-         // set to `true` (without backticks and without quotes) for blinking cursor
-         cursorBlink: true,
-        
+        // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
+        cursorColor: 'rgba(255,0,0,0.8)',
+        // terminal text color under BLOCK cursor
+        cursorAccentColor: '#000',
+        // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
+        cursorShape: 'BLOCK',
+        // set to `true` (without backticks and without quotes) for blinking cursor
+        cursorBlink: false,
+
         // color of the text
         foregroundColor: '#fff',
 
@@ -37,13 +34,18 @@ module.exports = {
         borderColor: '#000',
 
         // custom css to embed in the main window
-        css: '',
+        css: `
+            .terms_terms {
+                background: url(file:////Users/dehimb/.hyper/bg.jpg) center;
+                background-size: cover;
+            }
+        `,
 
         // custom css to embed in the terminal window
-        termCSS: '',
+        termCSS:'',
 
         // custom padding (css format, i.e.: `top right bottom left`)
-        padding: '5px 5px 5px 5px',
+        padding: '5px 5px 0px 5px',
 
         // the full list. if you're going to provide the full color palette,
         // including the 6 x 6 color cubes and the grayscale map, just provide
@@ -82,7 +84,7 @@ module.exports = {
         bell: 'SOUND',
 
         // if true, selected text will automatically be copied to the clipboard
-        copyOnSelect: false
+        copyOnSelect: false,
 
         // URL to custom bell
         // bellSoundURL: 'http://example.com/bell.mp3',
@@ -100,7 +102,8 @@ module.exports = {
         "hyperminimal",
         "hyperterm-cursor",
         "hyper-alt-click",
-        "hyper-monokai-deluxe",
+        "hyper-night-owl",
+        "hyper-transparent"
     ],
 
     // in development, you can create a directory under
