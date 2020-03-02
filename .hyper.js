@@ -13,7 +13,9 @@ module.exports = {
         fontSize: 12,
 
         // font family with optional fallbacks
-        fontFamily: 'Menlo, "DejaVu Sans Mono", "Lucida Console", monospace',
+        // fontFamily: 'DejaVu Sans Mono for Powerline',
+  	fontFamily: '"DejaVu Sans Mono for Powerline", "Hack Nerd Font", "Operator Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+
 
         // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
         cursorColor: 'rgba(255,0,0,0.8)',
@@ -36,7 +38,7 @@ module.exports = {
         // custom css to embed in the main window
         css: `
             .terms_terms {
-                background: url(file:////Users/dehimb/.hyper/bg.jpg) center;
+                background: url(file:////home/dnezhydenko/.hyper/bg.jpg) center;
                 background-size: cover;
             }
         `,
