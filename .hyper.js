@@ -3,6 +3,7 @@
 
 module.exports = {
     config: {
+        modifierKeys: { altIsMeta: true },
         alwaysOnTop: {
             debug: false,
             default: false
@@ -14,7 +15,7 @@ module.exports = {
 
         // font family with optional fallbacks
         // fontFamily: 'DejaVu Sans Mono for Powerline',
-  	fontFamily: '"DejaVu Sans Mono for Powerline", "Hack Nerd Font", "Operator Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+        fontFamily: '"DejaVu Sans Mono for Powerline", "Hack Nerd Font", "Operator Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
 
         // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
@@ -38,7 +39,7 @@ module.exports = {
         // custom css to embed in the main window
         css: `
             .terms_terms {
-                background: url(file:////home/dnezhydenko/.hyper/bg.jpg) center;
+                background: url(file:////Users/dehimb/.hyper/bg.jpg) center;
                 background-size: cover;
             }
         `,
