@@ -9,13 +9,13 @@ module.exports = {
             default: false
         },
         defaultSSHApp: true,
-        shell: '/usr/local/bin/zsh',
+        shell: '/bin/zsh',
         // default font size in pixels for all tabs
-        fontSize: 12,
+        fontSize: 14,
 
         // font family with optional fallbacks
         // fontFamily: 'DejaVu Sans Mono for Powerline',
-        fontFamily: '"DejaVu Sans Mono for Powerline", "Hack Nerd Font", "Operator Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+        fontFamily: '"Agave Nerd Font"',
 
 
         // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
@@ -106,7 +106,8 @@ module.exports = {
         "hyperterm-cursor",
         "hyper-alt-click",
         "hyper-night-owl",
-        "hyper-transparent"
+        "hyper-transparent",
+        "hyper-font-ligatures"
     ],
 
     // in development, you can create a directory under
